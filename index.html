@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<title>智慧托管</title> 
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/search-form.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/
+	animate.css" />
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div id="header">
+		<img class="logo" src="images/tg@2x.png" alt="">
+		<ul id="menu" class="nav-menu clearfix unstyled">
+			<li class="active" data-menuanchor='page1'>
+				<a class="three-d active" href="#page1">首页<span class="three-d-box"><span class="front">首页</span><span class="back">首页</span></span></a>
+			</li>
+			<li data-menuanchor='page2' style="display: none;"></li>
+			<li data-menuanchor='page3' style="display: none;"></li>
+			<li data-menuanchor='page4'>
+				<a class="three-d" href="#page4">服务范围<img class="white" src="images/angle_down@2x.png" alt=""><img class="blue" src="images/xiala-lanse@2x.png" alt=""><span class="three-d-box"><span class="front">服务范围<img src="images/angle_down@2x.png" alt=""></span><span class="back">服务范围<img src="images/angle_down@2x.png" alt=""></span></span></a>
+				<ul class="clearfix unstyled drop-menu">
+					<li>
+						<a onclick="serveType(0)" href="#page4" class="three-d">
+							个性托管
+							<span class="three-d-box"><span class="front">个性托管</span><span class="back">个性托管</span></span>
+						</a>
+					</li>
+					<li>
+						<a onclick="serveType(1)" href="#page4" class="three-d">
+							普惠托管
+							<span class="three-d-box"><span class="front">普惠托管</span><span class="back">普惠托管</span></span>
+						</a>
+					</li>
+					<li>
+						<a onclick="serveType(2)" href="#page4" class="three-d">
+							营养餐
+							<span class="three-d-box"><span class="front">营养餐</span><span class="back">营养餐</span></span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li data-menuanchor='page5'><a class="three-d" href="#page5">关于我们<span class="three-d-box"><span class="front">关于我们</span><span class="back">关于我们</span></span></a></li>
+			<li data-menuanchor='page6'><a class="three-d" href="#page6">下载App<span class="three-d-box"><span class="front">下载App</span><span class="back">下载App</span></span></a></li>
+			<li data-menuanchor='page7'><a class="three-d" href="#page7">联系我们<span class="three-d-box"><span class="front">联系我们</span><span class="back">联系我们</span></span></a></li>
+		</ul>
+		<!-- <img class="search-icon" src="images/sousuo@2x.png" alt=""> -->
+		<div class="line"></div>
+		<!-- <div class="search-wrap" style="position: relative;">
+			<div class="search-wrapper">
+	            <div class="input-holder" onclick="stopPro(this, event)">
+	                <input type="text" class="search-input" placeholder="输入搜索关键字" />
+	                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+	            </div>
+	            <span class="close" onclick="searchToggle(this, event);"></span>
+	            <div class="result-container">
+	            </div>
+	        </div>
+	    </div> -->
+	</div>
+	<div id="left">
+		<div class="fixtel">
+			<img src="images/dianhua@2x.png" alt="">
+			<div class="hide">18620997042</div>
+		</div>
+		<div class="fixweixin">
+			<img src="images/weixin@2x.png" alt="">
+			<div class="hide">
+				<img src="images/271542078675_.pic_hd@2x.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="fullpage">
+		<div class="section " id="section0">
+			<div class="overlay"></div>
+			<div class="slide banner1">
+				<div class="container">
+					<p>创建“智慧托管”体系，全力推进素质教育</p>
+					<h2>FUTURE</h2>
+					<h2>CARE</h2>
+					<div class="line"></div>
+					<p>始于2018，展望未来…</p>
+				</div>
+			</div>
+			<div class="slide banner2">
+				<div class="container">
+					<h2>专业托管教育</h2>
+					<div class="line"></div>
+					<p>汇聚一批有情怀、有能力、有热情的教育工作者，凝聚成课后 托管的番禺智慧，推动政府、家长、学校教育理念的更新、教 育方法的提升、教育成果的集聚，讲好托管教育的番禺故事。</p>
+				</div>
+			</div>
+			<div class="slide banner3">
+				<div class="container">
+					<h2>美味营养餐</h2>
+					<div class="line"></div>
+					<p>专业营养师分析，多元丰富的套餐选择，为孩子的营养健康饮食保驾护航，食材严格选用新鲜食材。</p>
+				</div>
+			</div>
+			<div class="slide-pre">
+				<img src="images/zuohua@2x.png" alt="">
+			</div>
+			<div class="slide-next">
+				<img src="images/youhua@2x.png" alt="">
+			</div>
+			<div class="load-button">
+				<img src="images/xiazai@2x.png" alt="">
+				<p><a href="#page6">立即下载</a></p>
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="overlay"></div>
+			<div class="container">
+				<p>智慧托管APP<span>FUTURE CARE</span></p>
+				<div>
+					<img class="hide" src="images/adsd@2x.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="overlay2"></div>
+			<div class="container">
+				<p>视频中心<span>VIDEO CENTER</span></p>
+				<div class="video-wrap">
+					<div>
+						<div class="overlay2"></div>
+						<video preload="auto" data-controls="controls" poster="" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+	                    <div class="play-wrap">
+	                        <img src="images/bofang@2x.png">
+	                        <div class="vedio-text">
+		                        <p>Promotional video</p>
+		                        <p>宣传视频</p>
+		                        <div class="line"></div>
+		                    </div>
+	                    </div>
+	                </div>
+				</div>
+			</div>
+			<ul>
+				<li class="cut-line">
+					<div class="wrap">
+						<p>学生</p>
+						<p>
+							<span class="timer">60000</span>
+							<span>+</span>
+						</p>
+					</div>
+				</li>
+				<li class="cut-line school">
+					<p>学校</p>
+					<p>
+						<span class="timer">60</span>
+						<span>+</span>
+					</p>
+				</li>
+				<li class="cut-line course">
+					<p>个性化课程</p>
+					<p>
+						<span class="timer">620</span>
+						<span>+</span>
+					</p>
+				</li>
+				<li>
+					<div class="wrap">
+						<p>机构</p>
+						<p>
+							<span class="timer">90</span>
+							<span>+</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="section" id="section3">
+			<div class="overlay"></div>
+			<div class="container">
+				<p>服务范围<span>SERVUIE SCOPE</span></p>
+				<div class="box">
+					<div class="carousel">
+					    <ul class="img-ct">
+					        <li>
+					        	<a href="javascript:void(0)">
+					        		<img src="images/geixng@2x.png">
+					        		<div class="img-text">
+					        			<h2>个性托管</h2>
+					        			<p>Personality trusteeship</p>
+					        			<p>大数据系统整合区内“多元智能”框架下的系列课程，在线报名及调课系统。在线请假系统，考勤系统及家校互动系统，师生互评系统，校方后台数据查看，政府后台数据监控机构后台日常运营操作。</p>
+					        		</div>
+					        	</a>
+					        </li>
+					        <li>
+					        	<a href="javascript:void(0)">
+					        		<img src="images/puhui@2x.png" alt="图片加载失败">
+					        		<div class="img-text">
+					        			<h2>普惠托管</h2>
+					        			<p>Universal trusteeship</p>
+					        			<p>在线灵活选择普惠托管时段，支付系统及请假系统，在线课表及考勤系统，校方后台数据查看，政府后台数据监控，机构后台日常运营操作，家长投诉建议通道。</p>
+					        		</div>
+					        	</a>
+					        </li>
+					        <li>
+					        	<a href="javascript:void(0)">
+					        		<img src="images/yingyangcan@2x.png" alt="图片加载失败">
+					        		<div class="img-text">
+					        			<h2>营养餐</h2>
+					        			<p>Nutritious meal</p>
+					        			<p>在线选餐支付，在线请假退费，孩子成长营养元素需求分析系统，餐食配送资质展示页面，家长满意度评分系统，家长投诉建议通道。</p>
+					        		</div>
+					        	</a>
+					        </li>
+					    </ul>
+					    <ul class="bullet">
+					        <li class="active"></li>
+					        <li></li>
+					        <li></li>
+					    </ul>
+					</div>
+					<ul class="service-type">
+				        <li class="active">个性托管</li>
+				        <li>普惠托管</li>
+				        <li>营养餐</li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section4">
+			<div class="overlay2"></div>
+			<div class="container">
+				<p>关于我们<span>ABOUT US</span></p>
+				<div class="wrap">
+					<div class="box1">
+						<h2 class="hide">智慧托管——从托管服务到托管教育</h2>
+						<p class="hide">民办智慧托管是专门为孩子提供优质服务和素质教育的一站式平台，我们为孩子提供安全放心的校内课后托管，优选符合资质知名餐饮公司为孩子提供安全、卫生、可口的午餐和下午茶，同时还为孩子们精心筛选了8大类个性化素质教育课程，优选符合资质的老师进行授课。未来我们还将为孩子提供涵盖营地、校外素质教育、留学、校园助手，学习规划等实用功能，发展学生兴趣爱好和特长技能，打造具有特色的小学生校内课后托管服务体系。</p>
+					</div>
+					<div class="box2">
+						<img class="hide" src="images/winwin@2x.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section5">
+			<div class="overlay"></div>
+			<div class="container">
+				<p>下载APP<span>DOWNLOAD</span></p>
+				<div class="wrap">
+					<p class="hide">根据您的需要，来选择使用我们的产品</p>
+					<div class="img-box hide">
+						<div class="img-item">
+							<img src="images/pingguo@2x.png" alt="">
+							<p>Iphone</p>
+						</div>
+						<div class="img-item">
+							<img src="images/anzhuo-2@2x.png" alt="">
+							<p>Android</p>
+						</div>
+						<div class="img-item">
+							<img src="images/271542078675_.pic_hd@2x.png" alt="">
+							<p>微信公众号</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section6">
+			<div class="overlay2"></div>
+			<div class="container">
+				<p>联系我们<span>CONTACT US</span></p>
+				<div class="platform hide">
+					<p>智慧托管平台</p>
+					<p>电话：18924319309</p>
+					<p>邮箱：services@smart001.com.cn</p>
+				</div>
+				<div class="form-ct">
+					<div class="form-fill hide">
+						<input type="text" placeholder="姓名">
+						<input type="text" placeholder="邮箱">
+						<input type="text" placeholder="电话">
+					</div>
+					<textarea class="hide" placeholder="内容"></textarea>
+				</div>
+				<div class="sub-btn hide">提交</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/fullpage.js"></script>
+	<script src="js/jquery.countUp.js"></script>
+	<script type="text/javascript">
+		var banner = '';
+	    var myFullpage = new fullpage('#fullpage', {
+	        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+	        menu: '#menu',
+	        css3: true,
+            scrollingSpeed: 1000,
+            // dragAndMove: true,
+            controlArrows: false,
+	        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+	        navigation: true,
+	        resize: true, //字体大小是否随窗口缩放而缩放 默认值为false
+	        // continuousHorizontal: true,
+	        navigationTooltips: ['首页', '智慧托管APP', '视频中心', '服务范围', '关于我们', '下载APP', '联系我们'],
+	        onLeave:function(index, nextIndex) {
+	        	// console.log(index.item)
+	        	var nextId = nextIndex.item.id;
+	        	console.log(nextId)
+	        	if(nextId == 'section2'){
+	        		//数字增长
+					$(".timer").countTo({
+	            		lastSymbol:"", //显示在最后的字符
+	            		from: 0,  // 开始时的数字
+	            		speed: 1500,  // 总时间
+	            		refreshInterval:100,  // 刷新一次的时间
+	            		beforeSize:0, //小数点前最小显示位数，不足的话用0代替 
+	            		decimals: 0,  // 小数点后的位数，小数做四舍五入
+	            		onUpdate: function() {
+	            		},  // 更新时回调函数
+	            		onComplete: function() {
+	                		for(i in arguments){
+	                    		// console.log(arguments[i]);
+	                		}
+	            		}
+	        		});
+				}
+	        },
+	        afterLoad:function(anchorLink, index){
+	        	//滚动到某一屏后的回调函数  
+	        	var id = index.item.id;
+	        	console.log('index', index.item.id)
+
+	        	if(id == 'section0'){
+	        		//首屏轮播初始化自动轮播时间
+					banner = setInterval(function(){ 
+				       fullpage_api.moveSlideRight(); 
+				    }, 5000); 
+				} 
+
+	        	if(id == 'section1'){
+					$('#section1 .container img').removeClass('hide')
+					$('#section1 .container img').addClass('animated fadeInLeftBig')
+				}  else {
+					$('#section1 .container img').addClass('hide')
+					$('#section1 .container img').removeClass('animated fadeInLeftBig')
+				}
+
+				if(id == 'section4'){
+					$('#section4 .box1 h2').removeClass('hide')
+					$('#section4 .box1 h2').addClass('animated fadeInDown')
+					$('#section4 .box1 p').removeClass('hide')
+					$('#section4 .box1 p').addClass('animated fadeInUp') 
+					$('#section4 .box2 img').removeClass('hide')
+					$('#section4 .box2 img').addClass('animated fadeInRight')
+				}  else {
+					$('#section4 .box1 h2').addClass('hide')
+					$('#section4 .box1 h2').removeClass('animated fadeInDown')
+					$('#section4 .box1 p').addClass('hide')
+					$('#section4 .box1 p').removeClass('animated fadeInUp')
+					$('#section4 .box2 img').addClass('hide')
+					$('#section4 .box2 img').removeClass('animated fadeInRight')
+				}
+
+				if(id == 'section5'){
+					$('#section5 .wrap>p').removeClass('hide')
+					$('#section5 .wrap>p').addClass('animated lightSpeedIn')
+					$('#section5 .img-box').removeClass('hide')
+					$('#section5 .img-box').addClass('animated fadeInDown')
+				}  else {
+					$('#section5 .wrap>p').addClass('hide')
+					$('#section5 .wrap>p').removeClass('animated lightSpeedIn')
+					$('#section5 .img-box').addClass('hide')
+					$('#section5 .img-box').removeClass('animated fadeInDown')
+				}
+
+				if(id == 'section6'){
+					$('#section6 .platform').removeClass('hide')
+					$('#section6 .platform').addClass('animated fadeInDownBig')
+					$('#section6 .form-fill').removeClass('hide')
+					$('#section6 .form-fill').addClass('animated fadeInLeftBig')
+					$('#section6 textarea').removeClass('hide')
+					$('#section6 textarea').addClass('animated fadeInRight')
+					$('#section6 .sub-btn').removeClass('hide')
+					$('#section6 .sub-btn').addClass('animated fadeInUp')
+				}  else {
+					$('#section6 .platform').addClass('hide')
+					$('#section6 .platform').removeClass('animated fadeInDownBig')
+					$('#section6 .form-fill').addClass('hide')
+					$('#section6 .form-fill').removeClass('animated fadeInLeftBig')
+					$('#section6 textarea').addClass('hide')
+					$('#section6 textarea').removeClass('animated fadeInRight')
+					$('#section6 .sub-btn').addClass('hide')
+					$('#section6 .sub-btn').removeClass('animated fadeInUp')
+				}
+			} ,
+	        showActiveTooltip: true,
+	        slidesNavigation: true, //是否显示左右轮播的小圆点
+	        navigationPosition: 'right'
+	    });
+
+		//鼠标悬停在第一屏的左右按钮上和轮播内容上时，停止轮播
+	    $('#section0 .slide-pre, #section0 .slide-next, #section0 .container').on('mouseenter', function() {
+	    	clearInterval(banner)
+	    })
+	    //鼠标离开第一屏的左右按钮上或轮播内容上时时，开始自动轮播
+	    $('#section0 .slide-pre,#section0 .slide-next, #section0 .container').on('mouseleave', function() {
+	    	banner = setInterval(function(){ 
+		       fullpage_api.moveSlideRight(); 
+		    }, 5000); 
+	    })
+
+	    // $('#section0 .slide-pre').on('click', function() {
+	    // 	fullpage_api.moveSlideLeft();
+	    // })
+
+	    // $('#section0 .slide-next').on('click', function() {
+	    // 	fullpage_api.moveSlideRight();
+	    // })
+
+	    function serveType(index) {
+	    	//个性托管
+	    	if (index == 0) {
+	    		if(index > currentIndex){
+			        playNext(index - currentIndex);
+			    } else if (index < currentIndex){
+			        playPre(currentIndex - index);
+			    }
+	    	}
+
+	    	//普惠托管
+	    	if (index == 1) {
+	    		if(index > currentIndex){
+			        playNext(index - currentIndex);
+			    } else if (index < currentIndex){
+			        playPre(currentIndex - index);
+			    }
+	    	}
+
+	    	//营养餐
+	    	if (index == 2) {
+	    		if(index > currentIndex){
+			        playNext(index - currentIndex);
+			    } else if (index < currentIndex){
+			        playPre(currentIndex - index);
+			    }
+	    	}
+	    }
+
+	    $(".fixtel").on("mouseenter",function(){
+	        $(".fixtel div").removeClass('hide')
+	    })
+
+	    $(".fixtel").on("mouseleave",function(){
+	        $(".fixtel div").addClass('hide')
+	    })
+
+	    $(".fixweixin").on("mouseenter",function(){
+	        $(".fixweixin div").removeClass('hide')
+	    })
+
+	    $(".fixweixin").on("mouseleave",function(){
+	        $(".fixweixin div").addClass('hide')
+	    })
+
+	    function searchToggle(obj, evt){
+	    	evt.stopPropagation()
+            var container = $(obj).closest('.search-wrapper');
+
+            if(!container.hasClass('active')){
+                  container.addClass('active');
+                  evt.preventDefault();
+            }
+            else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                  container.removeClass('active');
+                  // clear input
+                  container.find('.search-input').val('');
+                  // clear and hide result container when we press close
+                  container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+            }
+        }
+
+        function stopPro(obj, evt) {
+        	evt.stopPropagation()
+        }
+
+        $(document).click(function() {
+        	var obj = $('.close');
+        	var container = $(obj).closest('.search-wrapper');
+
+            if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                  container.removeClass('active');
+                  // clear input
+                  container.find('.search-input').val('');
+                  // clear and hide result container when we press close
+                  container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+            }
+        })
+
+	    $('.play-wrap img').click(function() {
+	    	console.log(111)
+	    	var media = document.querySelector('video');
+	    	$('.video-wrap .overlay2').css({
+	    		display: 'none',
+	    	});
+	    	$('.video-wrap .play-wrap').css({
+	    		display: 'none',
+	    	});
+	    	$('video').attr('controls',$('video').attr('data-controls'))
+	    	media.play()
+	    })
+
+	    //轮播
+	    var $imgCt = $('.img-ct'),
+	        $imgWidth = $('.carousel .img-ct>li').eq(0).width(),
+	        $imgLen = $('.carousel .img-ct>li').length,
+	        $bullet = $('.bullet li'),
+	        $tab = $('.service-type li'),
+	        lock = false,
+	        clock,
+	        currentIndex = 0;
+
+    	var $last = $imgCt.children("li").last().clone(),
+        	$first = $imgCt.children("li").first().clone();
+    
+	    //在图片列表开头和结尾分别添加最后一张图和第一张图，这时图片的个数变为5，而$imgLen值还是4，不是动态改变的
+	    $imgCt.append($first);
+	    $imgCt.prepend($last);
+	    $imgCt.css({
+	      //因为轮播的图片个数可以根据需求改变，所以$imgCt的宽度不应该写死，而应该动态计算
+	      width: $imgWidth*($imgLen + 2),
+	      left: -$imgWidth
+	    })
+
+	    timeClock();
+
+	    //当鼠标在图片上停留时，停止自动轮播
+	    $(".carousel").on("mouseenter",function(){
+	        clearInterval(clock)
+	    })
+
+	    //当鼠标离开图片时，开始自动轮播
+	    $(".carousel").on("mouseleave",function(){
+	        timeClock()
+	    })
+
+	    //当鼠标在tab上停留时，停止自动轮播
+	    $(".service-type").on("mouseenter",function(){
+	        clearInterval(clock)
+	    })
+
+	    //当鼠标离开tab时，开始自动轮播
+	    $(".service-type").on("mouseleave",function(){
+	        timeClock()
+	    })
+
+	    function playNext(len) {
+	        var that = this;
+	        var $imgCt = $('.img-ct');
+            //设置状态锁防止滚动过程中重复点击
+            if(lock){
+		        return;
+		     }
+		    lock = true
+
+            $imgCt.animate({
+            	left: '-='+len*$imgWidth
+            },500, function() {
+            	currentIndex+=len;
+
+	            console.log('imgLen', $imgLen)
+	            console.log('currentIndex', currentIndex)
+
+	            if (currentIndex === $imgLen) {
+	        		$imgCt.css({left: -$imgWidth});
+		            currentIndex = 0;
+		        }
+	          	setBullet();
+	          	lock = false;
+	        })
+	    }
+
+	    function playPre(len) {
+	    	var $imgCt = $('.img-ct');
+        	var that = this;
+        	//设置状态锁防止滚动过程中重复点击
+        	if(lock){
+		        return;
+		    }
+		    lock = true;
+
+            $imgCt.animate({
+            	left: '+='+len*$imgWidth
+            },500, function() {
+            	currentIndex -= len;
+
+	            if (currentIndex === -1) {
+		            $imgCt.css({left: -$imgLen*$imgWidth});
+		            currentIndex = $imgLen-1;
+		        }
+	            setBullet();
+	            lock = false;
+            })
+        }
+
+	    //点击tab切换到对应图片上
+	    $tab.on('click', function(){
+	    	clearInterval(clock)
+			var index = $(this).index();
+			console.log('tabindex', index);
+		    if(index > currentIndex){
+		        playNext(index - currentIndex);
+		    } else if (index < currentIndex){
+		        playPre(currentIndex - index);
+		    }
+		})
+
+	    $bullet.on('click', function(e) {
+	    	clearInterval(clock)
+            var index = $(this).index();
+			
+		    if(index > currentIndex){
+		        playNext(index - currentIndex);
+		    } else if (index < currentIndex){
+		        playPre(currentIndex - index);
+		    }
+        })     
+
+	    function setBullet(){
+	    	$tab.removeClass('active')
+	                .eq(currentIndex)
+	                .addClass('active')
+
+        	$bullet.removeClass('active')
+               	   .eq(currentIndex)
+                   .addClass('active')
+        }
+
+	    //自动轮播，每个一秒滚动一次
+	    function timeClock(){
+	      clock = setInterval(function(){
+	         playNext(1)
+	       },5000)
+	    }
+	</script>
+	<script src="https://s5.cnzz.com/z_stat.php?id=1275556521&web_id=1275556521" language="JavaScript"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单确认</title>
+    <link rel="stylesheet" href="/src/js/sui/css/sm.min.css">
+    <link rel="stylesheet" href="/src/js/sui/css/sm-extend.min.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <style>
+        * { touch-action: pan-y; }
+    </style>
+</head>
+
+<body>
+
+        <form name="cardContent" id="cardContent" method="post">
+            <div id="order-page" class="page page-current">
+                <nav class="bar bar-tab bar-option">
+                    <a class="tab-item item-border">
+                        <span class="tab-label">共计：<i class="red" id="Count">6</i> 件</span>
+                    </a>
+                    <a class="tab-item total" >
+                        <span class="tab-label">合计:<b class="red" id="total">30.00元</b></span>
+                    </a>
+                    <a class="tab-item btn btn-submit">
+                        <span class="tab-label">提交订单</span>
+                    </a>
+                </nav>
+                <div class="content native-scroll">
+                    <div class="card list-panel shadow">
+                        <div class="card-header"><span><i class="icon icon-tuoguan"></i> 普惠托管( <font color="red">晚托</font> )</span></div>
+                        <div class="card-content">
+                            <div class="list-block media-list">
+                                <ul>
+                                                                        <li>
+                                        <label class="label-checkbox item-content">
+                                            <div class="item-media"></div>
+                                            <div class="item-media "><div class="pic"><img src="/src/demo/pic3.png" alt=""></div>  </div>
+                                            <div class="item-inner">
+                                                <div class="item-title">周二 16:30-17:15</div>
+                                                <div class="item-text">￥5.00</div>
+                                            </div>
+                                            <div class="item-media item-nums">x 6</div>
+                                        </label>
+                                    </li>
+                                                                     </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card form-panel shadow">
+                        <div class="card-header"><span><i class="icon icon-xueshengxx"></i> 学生信息</span></div>
+                        <div class="card-content">
+                            <div class="list-block">
+                                <ul>
+                                    <!-- Text inputs -->
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">学校信息：</div>
+                                                <div class="item-input">
+                                                    广州市番禺区石楼镇海鸥学校 &nbsp;<a href="/wechat/user-info?type_isp=3"><font color="red">修改</font></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">学生姓名：</div>
+                                                <div class="item-input">
+                                                    <input type="text" name="surname" id="surname" value="" placeholder="请填写">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content item-link">
+
+
+
+                                            <div class="item-inner">
+                                                <div class="item-title label">所在年级：</div>
+                                                <div class="item-input">
+                                                    <select placeholder="请填选择" name="grades" id="grades">
+                                                        <option value="">请填选择年级</option>
+                                                        <option value="一年级">一年级</option>
+                                                        <option value="二年级">二年级</option>
+                                                        <option value="三年级">三年级</option>
+                                                        <option value="四年级">四年级</option>
+                                                        <option value="五年级">五年级</option>
+                                                        <option value="六年级">六年级</option>
+                                                        <option value="七年级">七年级</option>
+                                                        <option value="八年级">八年级</option>
+                                                        <option value="九年级">九年级</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content item-link">
+                                            <div class="item-inner">
+                                                <div class="item-title label">所在班级：</div>
+                                                <div class="item-input">
+                                                    <select placeholder="请填选择"  name="classes" id="classes">
+                                                        <option value="">请填选择班级</option>
+                                                        <option value="1班">1班</option>
+                                                        <option value="2班">2班</option>
+                                                        <option value="3班">3班</option>
+                                                        <option value="4班">4班</option>
+                                                        <option value="5班">5班</option>
+                                                        <option value="6班">6班</option>
+                                                        <option value="7班">7班</option>
+                                                        <option value="8班">8班</option>
+                                                        <option value="9班">9班</option>
+                                                        <option value="10班">10班</option>
+                                                        <option value="11班">11班</option>
+                                                        <option value="12班">12班</option>
+                                                        <option value="13班">13班</option>
+                                                        <option value="14班">14班</option>
+                                                        <option value="15班">15班</option>
+                                                        <option value="16班">16班</option>
+                                                        <option value="17班">17班</option>
+                                                        <option value="18班">18班</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="align-top" style="display: none;">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">备注说明：</div>
+                                                <div class="item-input">
+                                                    <textarea name="site" id="site" placeholder="如有特殊情况，请具体说明"></textarea>
+                                                    <input name="out_trade_no" id="out_trade_no" value="201811281423223658065" type="hidden">
+                                                    <input name="cart_id" id="cart_id" value="90" type="hidden">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+    </div>
+</div>
+</form>
+<script type='text/javascript' src="/src/js/zepto.min.js"></script>
+<script type='text/javascript' src="/src/js/sui/js/sm.min.js"></script>
+<script >
+    $(document).ready(function(){
+
+
+        $('.btn-submit').click(function () {
+            var surname = $('#surname').val();
+            var grades  = $('#grades').val();
+            var classes = $('#classes').val();
+            var site = $('#site').val();
+            if(surname=='')
+            {
+                $.alert('请填写学生姓名');
+                return false;
+            }
+            if(grades=='')
+            {
+                $.alert('请填写所在年级');
+                return false;
+            }
+            if(classes=='')
+            {
+                $.alert('请填写所在班级');
+                return false;
+            }
+            var Site = '学生姓名：'+surname+'<br>所在年级：'+grades+'<br>所在班级：'+classes+'<br>其他说明：'+site;
+            $.confirm(Site,['请确认您填写的信息'], function () {
+                var _form = $('form');
+                $.ajax({
+                    type: 'POST',
+                    url: '/quality/orders-save',
+                    data: _form.serialize(),
+                    success: function(data) {
+                        if (data.code == '200') {
+                            location.href = data.url;
+                        } else {
+                            $.alert(data.msg);
+                        }
+                    },
+                    error: function(data) {
+                        $.alert('您的操作过于频繁，请稍后再试');
+                    }
+                });
+            });
+        })
+    });
+</script>
+</body>
+
+</html>
